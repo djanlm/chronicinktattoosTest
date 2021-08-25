@@ -1,3 +1,10 @@
 export function isPalindrome(inputString) {
-  // TODO: write your code here
+
+  var array = inputString.split("");
+  var reverseArray = array.reverse();
+  var reverseString = reverseArray.join("");
+
+  if (inputString === reverseString) return true;
+
+  return false;
 }
